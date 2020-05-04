@@ -1,10 +1,14 @@
+#include <Header.h>
 #include "UsbHistory.h"
-#include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 	UsbHistory w;
 	w.show();
+
+	::testing::InitGoogleTest(&argc, argv);
+	RUN_ALL_TESTS();
+
 	return a.exec();
 }

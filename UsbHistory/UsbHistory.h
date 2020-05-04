@@ -1,6 +1,4 @@
 #pragma once
-
-#include <QtWidgets/QMainWindow>
 #include "ui_UsbHistory.h"
 
 class UsbHistory : public QMainWindow

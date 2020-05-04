@@ -1,0 +1,6 @@
+[submodule "FileOperations"]
+	path = FileOperations
+	url = https://github.com/30334243/FileOperations
+[submodule "Header"]
+	path = Header
+	url = https://github.com/30334243/Header
