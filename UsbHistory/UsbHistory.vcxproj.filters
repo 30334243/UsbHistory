@@ -34,9 +34,21 @@
     <ClCompile Include="..\Header\Header.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Reg\Reg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="treeitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="treemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="UsbHistory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="treemodel.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -52,6 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Header\Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reg\Reg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="treeitem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

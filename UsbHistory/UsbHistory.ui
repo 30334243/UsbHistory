@@ -13,7 +13,62 @@
   <property name="windowTitle">
    <string>UsbHistory</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QDateTimeEdit" name="DateStart">
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2020</year>
+        <month>5</month>
+        <day>6</day>
+       </datetime>
+      </property>
+      <property name="displayFormat">
+       <string>dd.MM.yyyy H:mm:ss</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QDateTimeEdit" name="DataEnd">
+      <property name="date">
+       <date>
+        <year>2020</year>
+        <month>5</month>
+        <day>6</day>
+       </date>
+      </property>
+      <property name="displayFormat">
+       <string>dd.MM.yyyy H:mm:ss</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QTreeWidget" name="Tree">
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QListWidget" name="usbstor"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
@@ -31,6 +86,8 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="ActScan"/>
+   <addaction name="separator"/>
    <addaction name="ActUserAssist"/>
    <addaction name="ActRecent"/>
   </widget>
@@ -57,6 +114,18 @@
    </property>
    <property name="toolTip">
     <string>Посмотреть последние открываемые файлы</string>
+   </property>
+  </action>
+  <action name="ActScan">
+   <property name="icon">
+    <iconset resource="UsbHistory.qrc">
+     <normaloff>:/UsbHistory/Images/Scan.png</normaloff>:/UsbHistory/Images/Scan.png</iconset>
+   </property>
+   <property name="text">
+    <string>scan</string>
+   </property>
+   <property name="toolTip">
+    <string>Запустить поиск следов от переферийных устройств</string>
    </property>
   </action>
  </widget>

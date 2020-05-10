@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="UsbHistory">
+    <file>Images/Scan.png</file>
     <file>Images/Recent.png</file>
     <file>Images/UserAssist.png</file>
   </qresource>

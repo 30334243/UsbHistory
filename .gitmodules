@@ -4,3 +4,9 @@
 [submodule "Header"]
 	path = Header
 	url = https://github.com/30334243/Header
+[submodule "Time"]
+	path = Time
+	url = https://github.com/30334243/Time
+[submodule "Reg"]
+	path = Reg
+	url = https://github.com/30334243/Reg
